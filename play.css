@@ -1,0 +1,47 @@
+.play{
+    width: 50%;
+    height: 300px;
+    border: 1px solid red;
+    margin: 20px;
+}
+.play iframe{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.desc{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    font-weight: 900;
+}
+
+.comments{
+    margin: 10px;
+}
+
+.inputs{
+    margin: 10px;
+    width: 50%;
+    
+}
+.inputs input{
+
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    width: 100%;
+    outline: none;
+    
+}
+
+@media (max-width:400px){
+
+    .play {
+        width: 90%;
+      
+    }
+    .desc {
+        width: 80%;
+    }
+}

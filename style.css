@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Caprasimo&family=Geologica:wght@300;400&family=Kaushan+Script&family=Lilita+One&family=Passion+One&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .sec1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu-icon{
+    font-size: 20px;
+   
+}
+
+.logo .img-logo{
+    width: 120px;
+    height: 100%;
+}
+.logo .img-logo img{
+    width: 90%;
+    height: 100%;
+}
+
+.input{
+    display: flex;
+    width: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 40px;
+    align-items: center;
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.input:active{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.input .search-icon1,.search-icon2{
+   
+   width: 90px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   border-radius: 10px 0 0 10px;
+}
+.input input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    /* padding-left: 20px; */
+    
+}
+.input input::placeholder{
+   color: rgba(0, 0, 0, 0.5);
+   font-family: sans-serif;
+   font-size: 15px;
+    
+}
+.input .search-icon1{
+    display: none;
+    border-radius: 0 10px 10px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    font-size: 10px;
+}
+.input .search-icon1 .fa-magnifying-glass{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.search-icon2{
+    border-radius: 0 10px 10px 0;
+    background-color:#efefef;
+    min-width: 90px;
+    /* width: 90px; */
+    
+
+}
+.micro{
+    width: 60px;
+    height: 50px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 105%;
+}
+
+.profile{
+    display: flex;
+    width: 10%;
+    gap: 30px;
+
+}
+.profile div{
+    font-size: 20px;
+}
+
+.sec2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.sec2 button{
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+section.main{
+    width: 100%;
+    max-height: 80vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+section.main .main-icons{
+
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+   
+   
+}
+section.main .main-icons{
+    font-size: 20px;
+}
+
+section.main .vedios{
+
+    width:95%;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 20px;
+   
+}
+section.main .vedios .vedio{
+
+    width:350px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+   
+}
+section.main .vedios .vedio .vimg{
+
+    width:100%;
+    height: 70%;
+    position: relative;
+ 
+   
+}
+section.main .vedios .vedio .vimg span{
+
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+ 
+   
+}
+section.main .vedios .vedio .vimg img{
+
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+section.main .vedios .info{
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-size: 12px;
+}
+section.main .vedios .info .views{
+
+  display: flex;
+  color: gray;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.loading{
+    width: 0%;
+    height: 5px;
+    background-color: red;
+    transition: all 0.1s linear;
+    opacity: 0;
+}
+.loading2{
+    width: 50%;
+   opacity: 1;
+    height: 5px;
+}
+.loading3{
+    width: 100%;
+   opacity: 1;
+    height: 5px;
+}
+
+@media (max-width:1025px){
+
+    section.main .vedios {
+        justify-content: center;
+    }
+
+    section.main .vedios .vedio {
+        width: 410px;
+    }
+
+    section.main .main-icons {
+        margin-left: 20px;
+    }
+
+    .sec2{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .sec2 ul{
+        text-align: center;
+        padding: 10px 30px;
+        height: 90px;
+    }
+    .sec2 ul button{
+        margin: 10px;
+    }
+
+    .input {
+        width: 600px;
+    }
+    .profile {
+        gap: 20px;
+    }
+}
+
+
+
+@media (max-width:970px){
+    .input {
+        width: 400px;
+    }
+
+    .profile {
+        gap: 15px;
+    }
+
+    section.main .vedios .vedio {
+        width: 300px;
+    }
+
+    .sec2 ul {
+        height: auto;
+    }
+
+
+}
+
+@media (max-width:700px){
+
+    section.main .vedios .vedio {
+        width: 220px;
+    }
+
+    .input {
+        width: 280px;
+    }
+}
+
+
+
+@media (max-width:500px){
+
+    .input {
+        width: 200px;
+    }
+
+    .profile {
+        gap: 10px;
+    }
+
+    .search-icon2 {
+        min-width: 28px;
+    }
+  
+    .logo .img-logo {
+        width: 45px;
+        height: 100%;
+    }
+
+    .logo .img-logo img {
+        width: 68px;    
+    }
+
+    .logo {
+        gap: 5px;
+    }
+
+
+    header .sec1 {
+        justify-content: space-evenly;
+       
+    }
+
+
+    .sec2 ul {
+        display: none;
+    }
+
+    section.main .main-icons {
+       display: none;
+    }
+
+    .sec2 ul {
+        height: auto;
+    }
+
+    section.main .vedios{
+
+        width: 100%;
+    }
+
+    section.main .vedios .vedio {
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+
+@media (max-width:300px){
+
+    .profile div{
+        font-size: 15px;
+    }
+
+    .input {
+        width: 150px;
+        height: 25px;
+    }
+
+    .logo {
+        gap: 0;
+        width: auto;
+    }
+
+    .profile {
+        gap: 5px;
+    }
+
+    .logo .img-logo img {
+        width: 57px;
+    }
+    
+    
+    
+    
+}
+
+
